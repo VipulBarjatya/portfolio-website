@@ -1,0 +1,19 @@
+$website-width: 1280px;
+$main-color: #e0c097;
+$main2: #dab18f;
+$secondary-color: #b85c38;
+$bgcolor: #2d2424;
+$hovercolor: #5c3d2e;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url(https://iso.500px.com/wp-content/uploads/2019/11/Man-doing-postproduction-of-his-photos-on-laptop-at-night-By-Carina-Konig.jpg);
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

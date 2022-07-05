@@ -1,0 +1,157 @@
+// Tablet & Smaller
+
+@media (max-width: 1000px) {
+  #header-home {
+    height: 40rem;
+    background: $bg-image no-repeat center right / cover;
+
+    .header-content {
+      padding-top: 4rem;
+    }
+  }
+
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-c .testimonials,
+  .items {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  #Intro .container {
+    flex-direction: column;
+
+    img {
+      width: 80vw;
+
+      height: auto;
+    }
+  }
+
+  #contact-a .section-contact {
+    grid-template-columns: 1fr;
+    .form {
+      .text-fields {
+        grid-template-areas:
+          "name email"
+          "subject phone"
+          "message";
+      }
+    }
+
+    .map {
+      iframe {
+        height: 100%;
+        width: 90%;
+      }
+    }
+  }
+
+  #contact-a .contact-info {
+    flex-direction: column;
+
+    .contact-item {
+      padding: 1rem 0;
+    }
+  }
+
+  #main-footer .footer-content {
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .social .fa-brands {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 12rem;
+      border-bottom: 3px solid $secondary-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+    &-inner {
+      height: 12rem;
+      border-bottom: 3px solid $secondary-color;
+    }
+  }
+
+  //   Stack Grid Columns
+
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-c .testimonials,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  #Intro .container {
+    flex-direction: column;
+
+    img {
+      width: 80vw;
+
+      height: auto;
+    }
+
+    .intro-line {
+      font-size: 1.45rem;
+    }
+  }
+
+  #contact-a .section-contact {
+    grid-template-columns: 1fr;
+    .form {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message";
+      }
+    }
+
+    .map {
+      iframe {
+        height: 90%;
+        width: 90%;
+      }
+    }
+  }
+
+  #contact-a .contact-info {
+    flex-direction: column;
+
+    .contact-item {
+      padding: 1rem 0;
+    }
+  }
+
+  #main-footer .footer-content {
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .social .fa-brands {
+      margin: 0 auto;
+    }
+  }
+}
